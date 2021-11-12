@@ -1,0 +1,216 @@
+{
+  "dmp": {
+    "title": "DMP for P2OA SNO",
+    "description": "Data Managment Plan for the P2OA SNO",
+    "language": "eng",
+    "created": "2021-10-20T11:33:05.619Z",
+    "dmp_id": {
+      "identifier": "??",
+      "type": "doi"
+    },
+    "contact": {
+      "name": "Sedoo",
+      "mbox": "sedoo@obs-mip.fr"
+    },
+    "Other contact": "andry.andriatiana@obs-mip.fr",
+    "contributor": [
+      {
+        "name": "François Gheusi",
+        "mbox": "francois.gheusi@aero.obs-mip.fr",
+        "contributor_id": {
+          "identifier": "??",
+          "type": "orcid"
+        },
+        "role": [
+          "ProjectLeader"
+        ]
+      },
+      {
+        "name": "Marie Lothon",
+        "mbox": "marie.lothon@aero.obs-mip.fr",
+        "contributor_id": {
+          "identifier": "??",
+          "type": "orcid"
+        },
+        "role": [
+          "ProjectLeader"
+        ]
+      },
+      {
+        "name": "Véronique Pont",
+        "mbox": "veronique.pont@aero.obs-mip.fr",
+        "contributor_id": {
+          "identifier": "??",
+          "type": "orcid"
+        },
+        "role": [
+          "ProjectLeader"
+        ]
+      },
+      {
+        "name": "Solène Derrien",
+        "mbox": "solene.derrien@aero.obs-mip.fr",
+        "contributor_id": {
+          "identifier": "??",
+          "type": "orcid"
+        },
+        "role": [
+          "InstrumentationManager"
+        ]
+      },
+      
+      {
+        "name": "Gilles Athier",
+        "mbox": "gilles.athier@aero.obs-mip.fr",
+        "contributor_id": {
+          "identifier": "??",
+          "type": "orcid"
+        },
+        "role": [
+          "InstrumentationManager"
+        ]
+      }
+    ],
+    "ethical_issues_exist": "no",
+    "dataset": [
+      {
+        "title": "Sky imager L0",
+        "personal_data": "no",
+        "sensitive_data": "no",
+        "description": "daily data ",
+        "metadata": [
+          {
+            "metadata_standard_id": {
+              "identifier": "https://services.aeris-data.fr/aeriscatalogueprod/metadata/jsonschema?type=COLLECTION",
+              "type": "url"
+            },
+            "language": "eng",
+            "metadata_name": "ISO 19915, ISO 19139"
+          }
+        ],
+        "distribution": [
+          {
+            "title": "Open search Distribution",
+            "format": [
+              "jpeg"
+            ],
+            "available_until": "2021-03-17",
+            "byte_size": 27000000000,
+            "byte_size_annual": "61.3Go",
+            "data_access": "Restricted to authenticated users",
+            "description": "Download is available on aeris metadata catalogue or on product landing page",
+            "download_url": "https://p2oa.aeris-data.fr/landing-page/?uuid=1c8afd14-56d6-46b1-8b54-39ceca77d779",
+            "host": {
+              "title": "Sedoo",
+              "url": "https://sedur.sedoo.fr",
+              "host_id_type": "HTTP",
+              "geo_location": "FR",
+              "storage_type": "File system on /data2/p2oa/data/tree/cra/rapace/l0",
+              "backup_frequency": "A compléter",
+              "backup_type": "A compléter",
+              "description": "description "
+            }
+          }
+        ],
+        "technical_resource": [
+          {
+            "description": "ftp sedoo server post treatment data path where data are deposited by the provider for additional treatment",
+            "name": "ftp://sedur.sedoo.fr:/tempo/CRA/rapace"
+          }
+        ]
+      },
+      {
+        "title": "Sky imager L1a",
+        "personal_data": "no",
+        "sensitive_data": "no",
+        "description": "daily data ",
+        "metadata": [
+          {
+            "metadata_standard_id": {
+              "identifier": "https://services.aeris-data.fr/aeriscatalogueprod/metadata/jsonschema?type=COLLECTION",
+              "type": "url"
+            },
+            "language": "eng",
+            "metadata_name": "ISO 19915, ISO 19139"
+          }
+        ],
+        "distribution": [
+          {
+            "title": "Open search Distribution",
+            "format": [
+              "jpeg"
+            ],
+            "available_until": "2021-03-17",
+            "byte_size": 27000000000,
+            "byte_size_annual": "61.3Go",
+            "data_access": "Restricted to authenticated users",
+            "description": "Download is available on aeris metadata catalogue or on product landing page",
+            "download_url": "https://p2oa.aeris-data.fr/landing-page/?uuid=9c31068e-13b6-546a-87bf-06f52cd93498",
+            "host": {
+              "title": "Sedoo",
+              "url": "https://sedur.sedoo.fr",
+              "host_id_type": "HTTP",
+              "geo_location": "FR",
+              "storage_type": "File system on /data2/p2oa/data/tree/cra/rapace/l1a",
+              "backup_frequency": "A compléter",
+              "backup_type": "A compléter",
+              "description": "description "
+            }
+          }
+        ],
+        "technical_resource": [
+          {
+            "description": "ftp sedoo server post treatment data path where data are deposited by the provider for additional treatment",
+            "name": "ftp://sedur.sedoo.fr:/tempo/CRA/rapace"
+          }
+        ]
+      },
+      {
+        "title": "Weather variables",
+        "personal_data": "no",
+        "sensitive_data": "no",
+        "description": "daily data ",
+        "metadata": [
+          {
+            "metadata_standard_id": {
+              "identifier": "https://services.aeris-data.fr/aeriscatalogueprod/metadata/jsonschema?type=COLLECTION",
+              "type": "url"
+            },
+            "language": "eng",
+            "metadata_name": "ISO 19915, ISO 19139"
+          }
+        ],
+        "distribution": [
+          {
+            "title": "Open search Distribution",
+            "format": [
+              "jpeg"
+            ],
+            "available_until": "2021-09-24",
+            "byte_size": 488000000,
+            "byte_size_annual": "6.9Go",
+            "data_access": "Restricted to authenticated users",
+            "description": "Download is available on aeris metadata catalogue or on product landing page",
+            "download_url": "https://p2oa.aeris-data.fr/landing-page/?uuid=19a0106c-247c-49d6-b06d-26a098329e58",
+            "host": {
+              "title": "Sedoo",
+              "url": "https://sedur.sedoo.fr",
+              "host_id_type": "HTTP",
+              "geo_location": "FR",
+              "storage_type": "File system on /data2/p2oa/data/tree/cra/60mtowerslow/l0",
+              "backup_frequency": "A compléter",
+              "backup_type": "A compléter",
+              "description": "description "
+            }
+          }
+        ],
+        "technical_resource": [
+          {
+            "description": "ftp sedoo server where final data are deposited by the provider",
+            "name": "ftp://sedur.sedoo.fr:/final/CRA/60mtowerslow/l0"
+          }
+        ]
+      }
+    ]
+  }
+}
