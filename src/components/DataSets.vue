@@ -111,6 +111,7 @@
           { text: 'Description', value: 'description' },
           { text: 'Download URL', value: 'download_url' },
           { text: 'Data access', value: 'data_access' },
+          { text: 'Format', value: 'format' },
           { text: 'Available until', value: 'available_until' },
           { text: 'Volume', value: 'byte_size' },
           { text: '', value: 'data-table-expand' }
