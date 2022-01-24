@@ -1,5 +1,12 @@
 <template>
   <v-container>
+    <div v-if="loading">
+    <v-progress-linear :indeterminate="true">
+    </v-progress-linear>
+    Loading...
+    </div>
+    <div v-else>
+
     <v-row justify="center">
         <h1 class="display-2 font-weight-bold mb-3">
           {{ dmpData.title }}
@@ -47,12 +54,13 @@
       </v-col>
 
     </v-row>
+    </div>
   </v-container>
 </template>
 
 <script>
 //import dmpDataJson from '../resources/ex9-dmp-long.json'
-import dmpDataJson from '../resources/DMP_P2OA.json'
+//import dmpDataJson from '../resources/DMP_P2OA.json'
 import Contact from './Contact.vue';
 import Contributors from './Contributors.vue';
 import EthicalIssues from './EthicalIssues.vue';
@@ -63,11 +71,39 @@ export default {
     name: 'Dmp',
 
     data: () => ({
-      dmpData: dmpDataJson.dmp,
+      dmpData: {},
+      loading: false
     }),
 
     created: function() {
-      // REMPLACER le json statique par un appel de service
+      this.loadDmp();
     },
+
+     methods: {
+
+    loadDmp: function() {
+      let self =this
+      let queryString = window.location.search;
+      let urlParams = new URLSearchParams(queryString);
+      this.loading=true
+      let project = urlParams.get('project')
+      if (project) {
+        let url = this.$urls[project.toLowerCase()];
+        if (url) {
+           this.axios
+        .get(url)
+        .then(function(response) {
+          self.dmpData = response.data;
+        })
+        .catch(function(error) {
+          console.log(error)
+        })
+        .finally(function() {
+          self.loading = false;
+        });
+        }
+      }
+    }
+     }
   }
 </script>
